@@ -6,8 +6,6 @@
   export default defineConfig(({ mode }) => {
     // load environment variables for the current mode (dev, production)
     const env = loadEnv(mode, process.cwd());
-    const apiTarget = env.VITE_API_BASE || env.REAL_API_BASE || '';
-
     return {
     plugins: [react()],
     resolve: {
@@ -56,23 +54,11 @@
     },
     build: {
       target: 'esnext',
-      outDir: 'build',
+      outDir: 'dist',
     },
     server: {
       port: 3000,
       open: true,
-      // Only enable proxy when a valid target URL is provided via env
-      proxy: {
-            // Proxy all requests starting with /api/proxy to the real backend.
-            // Frontend calls `/api/proxy/...` and the dev server forwards to `apiTarget/...`.
-            '/api/proxy': {
-              target: 'https://script.google.com',
-              changeOrigin: true,
-              secure: false,
-      rewrite: (path) => path.replace(/^\/api\/proxy/, '/macros/s/AKfycbzGQDDJagf5J-jhg_K9vjztlR7EwCeFSuZpAvBaOj-5Rl0Z-0bV94PQrleYwtpwIGwb/exec'),
-            },
-          },
     },
   };
   });
-  // https://script.google.com/macros/s/AKfycbzGQDDJagf5J-jhg_K9vjztlR7EwCeFSuZpAvBaOj-5Rl0Z-0bV94PQrleYwtpwIGwb/exec
