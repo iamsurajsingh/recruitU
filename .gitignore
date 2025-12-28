@@ -1,0 +1,55 @@
+
+# Node
+node_modules/
+
+# Vite / build
+dist/
+build/
+.vite/
+.cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment
+.env
+.env.*.local
+.env.local
+local.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+Icon?
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+
+# Testing / coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# Misc
+*.tgz
+*.zip
+*.pid
+*.pid.lock
+pids/
+*~
+
+# Tool caches
+.eslintcache
+/.parcel-cache/
+.turbo/
