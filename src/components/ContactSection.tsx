@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send, CheckCircle2 } from "lucide-react";
-import { sendEmailAdmin, sendEmailUser, submitToSheet } from "../utils/utils";
+import { sendEmailUser, submitToSheet } from "../utils/utils";
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -14,7 +14,6 @@ export function ContactSection() {
     message: "",
   });
 
-  console.log(formData, "formData on submission");
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -39,30 +38,26 @@ export function ContactSection() {
 
     try {
       const responseOnSubmission = await submitToSheet(dataToSheet);
-      console.log(responseOnSubmission, 'Response from submission');
       // await sendEmailAdmin(dataEmailAdmin);
       await sendEmailUser(dataEmailAdmin);
-      alert("Submitted successfully!");
       if (Object.keys(responseOnSubmission).length > 0 && responseOnSubmission.success) {
         setSubmitted(true);
       }
-      setTimeout(() => {
-        setSubmitted(false);
-        setFormData({
-          type: "employer",
-          firstName: "",
-          lastName: "",
-          email: "",
-          phone: "",
-          company: "",
-          industry: "",
-          message: "",
-        });
-      }, 3000);
+      // setTimeout(() => {
+      //   setSubmitted(false);
+      //   setFormData({
+      //     type: "employer",
+      //     firstName: "",
+      //     lastName: "",
+      //     email: "",
+      //     phone: "",
+      //     company: "",
+      //     industry: "",
+      //     message: "",
+      //   });
+      // }, 3000);
     } catch (err) {
       setSubmitted(false);
-      console.log(err, 'Submission error');
-      alert("Submission failed");
     }
   };
 
