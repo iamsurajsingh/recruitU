@@ -5,12 +5,14 @@
       "description": "RecruitU - People, Purpose, Placement",
       "license": "ISC",
       "author": "",
-      "type": "commonjs",
+      "type": "module",
       "main": "index.js",
       "scripts": {
             "dev": "vite",
             "build": "vite build",
-            "start": "vite start"
+            "start": "vite start",
+            "server": "node server.js",
+            "dev:all": "concurrently \"npm run server\" \"npm run dev\""
       },
       "dependencies": {
             "@radix-ui/react-accordion": "^1.2.3",
@@ -42,11 +44,14 @@
             "class-variance-authority": "^0.7.1",
             "clsx": "*",
             "cmdk": "^1.1.1",
+            "dotenv": "^17.2.3",
             "emailjs-com": "^3.2.0",
             "embla-carousel-react": "^8.6.0",
+            "express": "^4.18.2",
             "input-otp": "^1.4.2",
             "lucide-react": "^0.487.0",
             "next-themes": "^0.4.6",
+            "node-fetch": "^3.3.2",
             "react": "^18.3.1",
             "react-day-picker": "^8.10.1",
             "react-dom": "^18.3.1",
@@ -62,6 +67,7 @@
             "@types/react": "^19.2.7",
             "@types/react-dom": "^19.2.3",
             "@vitejs/plugin-react-swc": "^3.10.2",
+            "concurrently": "^8.2.2",
             "vite": "6.3.5"
       }
 }

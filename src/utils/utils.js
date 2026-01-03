@@ -1,28 +1,14 @@
 import emailjs from 'emailjs-com';
 
 const submitToSheet = async (data) => {
-  try {
-    const res = await fetch("/api/proxy", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
+  const res = await fetch('/api/proxy', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ data }),
+  });
 
-    if (!res.ok) {
-      const text = await res.text().catch(() => '');
-      throw new Error(`SubmitContactData failed: ${res.status} ${text}`);
-    }
-
-    // try parse JSON if returned, otherwise return null
-    try {
-      return await res.json();
-    } catch {
-      return null;
-    }
-  } catch (err) {
-    console.error('submitToSheet error:', err);
-    throw err;
-  }
+  if (!res.ok) throw new Error('Request failed');
+  return res.json();
 };
 
 // const sendEmailAdmin = (data) => {
