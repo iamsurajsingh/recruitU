@@ -40,27 +40,24 @@ export function ContactSection() {
       const responseOnSubmission = await submitToSheet(dataToSheet);
       // await sendEmailAdmin(dataEmailAdmin);
       await sendEmailUser(dataEmailAdmin);
-      alert("Submitted successfully!");
       if (Object.keys(responseOnSubmission).length > 0 && responseOnSubmission.success) {
         setSubmitted(true);
       }
-      setTimeout(() => {
-        setSubmitted(false);
-        setFormData({
-          type: "employer",
-          firstName: "",
-          lastName: "",
-          email: "",
-          phone: "",
-          company: "",
-          industry: "",
-          message: "",
-        });
-      }, 3000);
+      // setTimeout(() => {
+      //   setSubmitted(false);
+      //   setFormData({
+      //     type: "employer",
+      //     firstName: "",
+      //     lastName: "",
+      //     email: "",
+      //     phone: "",
+      //     company: "",
+      //     industry: "",
+      //     message: "",
+      //   });
+      // }, 3000);
     } catch (err) {
       setSubmitted(false);
-      console.log(err, 'Submission error');
-      alert("Submission failed");
     }
   };
 
