@@ -23,19 +23,19 @@ export function Footer() {
             </div>
             <p className="text-slate-400 leading-relaxed mb-6 max-w-md">
               Building exceptional teams through strategic recruitment, deep industry expertise, 
-              and unwavering commitment to client success since 2009.
+              and unwavering commitment to client success.
             </p>
             <div className="flex gap-3">
                 <a href="https://www.linkedin.com/company/recruitutalentsolutions" target="_blank" style={{ color: '#1d293d' }} onMouseEnter={(e) => e.currentTarget.style.color = 'white'} onMouseLeave={(e) => e.currentTarget.style.color = '#1d293d'} className="w-10 h-10 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors">
                 <Linkedin size={18} />
               </a>
-              <a href="#" style={{ color: '#1d293d' }} onMouseEnter={(e) => e.currentTarget.style.color = 'white'} onMouseLeave={(e) => e.currentTarget.style.color = '#1d293d'} className="w-10 h-10 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors">
+              {/* <a href="#" style={{ color: '#1d293d' }} onMouseEnter={(e) => e.currentTarget.style.color = 'white'} onMouseLeave={(e) => e.currentTarget.style.color = '#1d293d'} className="w-10 h-10 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors">
                 <Twitter size={18} />
               </a>
               <a href="#" style={{ color: '#1d293d' }} onMouseEnter={(e) => e.currentTarget.style.color = 'white'} onMouseLeave={(e) => e.currentTarget.style.color = '#1d293d'} className="w-10 h-10 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors">
                 <Facebook size={18} />
-              </a>
-              <a href="#" style={{ color: '#1d293d' }} onMouseEnter={(e) => e.currentTarget.style.color = 'white'} onMouseLeave={(e) => e.currentTarget.style.color = '#1d293d'} className="w-10 h-10 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors">
+              </a> */}
+              <a href="mailto:info@recruitu.co.in" style={{ color: '#1d293d' }} onMouseEnter={(e) => e.currentTarget.style.color = 'white'} onMouseLeave={(e) => e.currentTarget.style.color = '#1d293d'} className="w-10 h-10 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors">
                 <Mail size={18} />
               </a>
             </div>
@@ -78,14 +78,14 @@ export function Footer() {
         <div className="border-t border-slate-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
             <p className="text-slate-400">
-              &copy; 2024 RecruitU Talent Solutions Private Limited. All rights reserved.
+              &copy; 2025 RecruitU Talent Solutions Private Limited. All rights reserved.
             </p>
-            <div className="flex flex-wrap gap-6 text-slate-400">
+            {/* <div className="flex flex-wrap gap-6 text-slate-400">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
               <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
               <a href="#" className="hover:text-white transition-colors">Accessibility</a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

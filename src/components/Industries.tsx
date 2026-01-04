@@ -29,7 +29,7 @@ export function Industries() {
       icon: <ShoppingBag className="w-7 h-7" />,
       name: "FMCG & FMCD",
       description:
-        "Engineering, product, data science, and technical leadership roles",
+        "Sales, marketing, operations, compliance, and customer engagement.",
       // stats: '20+ placements',
       roles: [
         "Key Account Manager",
@@ -46,7 +46,7 @@ export function Industries() {
       icon: <Factory className="w-7 h-7" />,
       name: "Manufacturing & Industrial",
       description:
-        "Operations, supply chain, quality assurance, and engineering",
+        "Operations, quality control, supply chain continuity, and on-site execution",
       // stats: '190+ placements',
       roles: [
         "Supply Chain Manager",
@@ -60,7 +60,7 @@ export function Industries() {
       icon: <TrendingUp className="w-7 h-7" />,
       name: "Financial Services",
       description:
-        "Investment banking, wealth management, fintech and accounting",
+        "Financial planning, compliance, risk management, accounting accuracy, and cash flow operations",
       // stats: '30+ placements',
       roles: [
         "FP&A Analyst",
@@ -73,7 +73,7 @@ export function Industries() {
     {
       icon: <Heart className="w-7 h-7" />,
       name: "Healthcare & Life Sciences",
-      description: "Pharma, Medical Devices",
+      description: "Product adoption, sales growth, key account management, logistics efficiency, and quality compliance",
       // stats: '220+ placements',
       roles: [
         "Product Specialist",
@@ -87,7 +87,7 @@ export function Industries() {
     {
       icon: <Code className="w-7 h-7" />,
       name: "IT",
-      description: "",
+      description: "Analytics, enterprise consulting, IT support, cybersecurity, and delivery management",
       // "Store management, merchandising, digital commerce, and marketing",
       // stats: '165+ placements',
       roles: [
@@ -126,7 +126,7 @@ export function Industries() {
     {
       icon: <FlaskConical className="w-7 h-7" />,
       name: "Chemical",
-      description: "Renewable energy, utilities management, and engineering",
+      description: "Shift supervision, inventory control, and compliance adherence",
       // stats: '125+ placements',
       roles: [
         "Shift Incharge",
@@ -137,28 +137,28 @@ export function Industries() {
     {
       icon: <MapPinHouse className="w-7 h-7" />,
       name: "Real Estate",
-      description: "Renewable energy, utilities management, and engineering",
+      description: "Financial underwriting, interior design execution, and effective property management",
       // stats: '125+ placements',
       roles: ["Underwriter", "Interior Designer", "Property Manager"],
     },
     {
       icon: <Hotel className="w-7 h-7" />,
       name: "Hospitality",
-      description: "Renewable energy, utilities management, and engineering",
+      description: "Hotel operations, guest satisfaction, and effective front office management",
       // stats: '125+ placements',
       roles: ["General Manager", "Duty Manager", "Front Office Executive"],
     },
     {
       icon: <CarFront className="w-7 h-7" />,
       name: "Automobile",
-      description: "Renewable energy, utilities management, and engineering",
+      description: "Vehicle production, overall business leadership, and dealership operations to achieve growth and customer satisfaction",
       // stats: '125+ placements',
       roles: ["Production Engineer", "General Manager", "Dealership Head"],
     },
     {
       icon: <Droplet className="w-7 h-7" />,
       name: "Oil & Gas",
-      description: "Renewable energy, utilities management, and engineering",
+      description: "Logistics coordination, safe refinery and process operations, and reliable utility systems in oil and gas operations",
       // stats: '125+ placements',
       roles: [
         "Logistics coordinator",
@@ -169,7 +169,7 @@ export function Industries() {
     {
       icon: <CogIcon className="w-7 h-7" />,
       name: "Automation",
-      description: "Renewable energy, utilities management, and engineering",
+      description: "Cost estimation, quality control, panel design, and on-site execution",
       // stats: '125+ placements',
       roles: [
         "Estimation & Cost engineer",
@@ -181,7 +181,7 @@ export function Industries() {
     {
       icon: <PaintBucket className="w-7 h-7" />,
       name: "Paints & Construction Chemicals",
-      description: "Renewable energy, utilities management, and engineering",
+      description: "Product innovation, sales expansion, procurement efficiency and dealer network development",
       // stats: '125+ placements',
       roles: [
         "R&D / Formulation Chemist",
