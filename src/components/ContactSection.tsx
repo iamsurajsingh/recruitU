@@ -85,7 +85,7 @@ export function ContactSection() {
             </p>
 
             <div className="space-y-6 mb-8">
-              <div className="flex items-start gap-4">
+              {/* <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Phone className="w-5 h-5 text-blue" />
                 </div>
@@ -96,16 +96,15 @@ export function ContactSection() {
                     Mon - Fri, 9am - 6pm IST
                   </p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Mail className="w-5 h-5 text-blue" />
                 </div>
                 <div>
-                  <div className="text-slate-900 mb-1">Email</div>
-                  <p className="text-slate-600">
-                    recruitutalentsolutions@gmail.com
+                  <p className="text-blue-700">
+                    info@recruitu.co.in
                   </p>
                   <p className="text-sm text-slate-500">
                     We'll respond within 24 hours
@@ -118,8 +117,7 @@ export function ContactSection() {
                   <MapPin className="w-5 h-5 text-blue" />
                 </div>
                 <div>
-                  <div className="text-slate-900 mb-1">Office Locations</div>
-                  <p className="text-slate-600">We love being remote</p>
+                  <p className="text-blue-700">We love being remote</p>
                   <p className="text-sm text-slate-500">
                     With global reach and local expertise
                   </p>
@@ -127,7 +125,7 @@ export function ContactSection() {
               </div>
             </div>
 
-            <div className="p-6 bg-white rounded-xl border border-slate-200">
+            {/* <div className="p-6 bg-white rounded-xl border border-slate-200">
               <h4 className="text-slate-900 mb-2">Schedule a Consultation</h4>
               <p className="text-sm text-slate-600 mb-4">
                 Book a 30-minute discovery call with one of our recruitment
@@ -136,7 +134,7 @@ export function ContactSection() {
               <button className="w-full px-5 py-2 border-2 border-slate-300 text-slate-700 rounded-lg hover:border-slate-400 hover:bg-slate-50 transition-colors">
                 View Available Times
               </button>
-            </div>
+            </div> */}
           </div>
 
           <div className="lg:col-span-3">

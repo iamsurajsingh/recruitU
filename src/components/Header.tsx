@@ -27,7 +27,7 @@ export function Header() {
       scrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-white'
     }`}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex items-center h-20">
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-2">
               {/* <div className="w-10 h-10 bg-slate-800 rounded flex items-center justify-center">
@@ -42,37 +42,37 @@ export function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-flex-end gap-1">
+          <div className="ml-left-auto mr-right-10 hidden lg:flex items-flex-end gap-1">
             <button 
               onClick={() => scrollToSection('services')}
               className="px-4 py-2 text-slate-700 hover:text-slate-900 hover:bg-slate-50-fixed rounded-lg transition-all"
             >
               Services
             </button>
-            <button 
+            {/* <button 
               onClick={() => scrollToSection('jobs')}
               className="px-4 py-2 text-slate-700 hover:text-slate-900 hover:bg-slate-50-fixed rounded-lg transition-all"
             >
               Opportunities
-            </button>
+            </button> */}
             <button 
               onClick={() => scrollToSection('industries')}
               className="px-4 py-2 text-slate-700 hover:text-slate-900 hover:bg-slate-50-fixed rounded-lg transition-all"
             >
               Industries
             </button>
-            <button 
+            {/* <button 
               onClick={() => scrollToSection('team')}
               className="px-4 py-2 text-slate-700 hover:text-slate-900 hover:bg-slate-50-fixed rounded-lg transition-all"
             >
               Our Team
-            </button>
-            <button 
+            </button> */}
+            {/* <button 
               onClick={() => scrollToSection('insights')}
               className="px-4 py-2 text-slate-700 hover:text-slate-900 hover:bg-slate-50-fixed rounded-lg transition-all"
             >
               Insights
-            </button>
+            </button> */}
           </div>
 
           <div className="hidden lg:flex items-center gap-3">

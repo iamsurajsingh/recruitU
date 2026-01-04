@@ -699,6 +699,13 @@
     justify-content: space-between;
   }
 
+  .ml-left-auto {
+    margin-left: auto;
+  }
+  .mr-right-10 {
+    margin-right: calc(var(--spacing) * 10);
+  }
+
   .justify-center {
     justify-content: center;
   }
